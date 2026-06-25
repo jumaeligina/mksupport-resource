@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mk体育 – 稳定服务入口说明</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #fcfcfc;
+      color: #1d1f27;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.65;
+      padding: 0 1.5rem;
+    }
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 3.2rem 0 4.8rem;
+    }
+
+    /* hero */
+    .hero {
+      margin-bottom: 3.8rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+      color: #0f121b;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #4a4e5a;
+      max-width: 560px;
+      border-left: 3px solid #3060e0;
+      padding-left: 1.2rem;
+    }
+
+    /* section base */
+    section {
+      margin-bottom: 3.6rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 510;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #e4e7ed;
+      color: #1f232c;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: #2a2f3b;
+    }
+    p {
+      margin-bottom: 1rem;
+      color: #343843;
+    }
+
+    /* advantage grid */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.8rem 1.5rem;
+      margin-top: 0.2rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 1.4rem 1.2rem 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 1px 3px rgba(0,0,0,0.04);
+      border: 1px solid #f0f2f5;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 16px rgba(44, 62, 80, 0.04);
+    }
+    .card .num {
+      font-size: 0.75rem;
+      font-weight: 550;
+      text-transform: uppercase;
+      color: #3060e0;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.3rem;
+    }
+    .card h4 {
+      font-size: 1rem;
+      font-weight: 520;
+      margin-bottom: 0.5rem;
+      color: #171b24;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #4b505e;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    /* faq summary */
+    .faq-item {
+      border-bottom: 1px solid #eef0f4;
+      padding: 1.1rem 0;
+    }
+    .faq-item:first-of-type {
+      padding-top: 0;
+    }
+    .faq-q {
+      font-weight: 510;
+      color: #1b1f29;
+      margin-bottom: 0.3rem;
+    }
+    .faq-a {
+      font-size: 0.95rem;
+      color: #494e5c;
+      padding-right: 0.5rem;
+    }
+    .faq-a a {
+      color: #3060e0;
+      text-decoration: none;
+      font-weight: 450;
+    }
+    .faq-a a:hover {
+      text-decoration: underline;
+    }
+
+    /* bottom link */
+    .bottom-note {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e6e9ef;
+      font-size: 0.9rem;
+      color: #535966;
+      line-height: 1.8;
+    }
+    .bottom-note a {
+      color: #3060e0;
+      text-decoration: none;
+      font-weight: 480;
+    }
+    .bottom-note a:hover {
+      text-decoration: underline;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef2fa;
+      color: #2148b3;
+      font-size: 0.7rem;
+      font-weight: 500;
+      padding: 0.2rem 0.7rem;
+      border-radius: 30px;
+      letter-spacing: 0.02em;
+      margin-left: 0.1rem;
+    }
+
+    /* responsive */
+    @media (max-width: 500px) {
+      .container { padding: 2.2rem 0 3.2rem; }
+      .hero h1 { font-size: 1.9rem; }
+      .grid-3 { grid-template-columns: 1fr; gap: 1.2rem; }
+      .card { padding: 1.2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- hero -->
+    <div class="hero">
+      <h1>mk体育 · 稳定入口</h1>
+      <div class="sub">
+        面向日常使用场景，提供直接、可依赖的服务访问路径。<br>
+        无需跳转与复杂配置，页面说明即使用指引。
+      </div>
+    </div>
+
+    <!-- 优势区：稳定入口特点 -->
+    <section>
+      <h2>入口特性</h2>
+      <div class="grid-3">
+
+        <div class="card">
+          <div class="num">01</div>
+          <h4>直达链路</h4>
+          <p>页面本身即为服务索引，减少中间环节。用户可通过 <a href="https://mksupport.com.cn" style="color:#3060e0; text-decoration: none; font-weight:450;">mk体育</a> 直接抵达资源位置。</p>
+        </div>
+
+        <div class="card">
+          <div class="num">02</div>
+          <h4>结构可读</h4>
+          <p>信息分区清晰，标题层级明确，便于快速定位功能与内容。无需反复查找入口。</p>
+        </div>
+
+        <div class="card">
+          <div class="num">03</div>
+          <h4>低噪页面</h4>
+          <p>极简布局，无冗余弹窗或自动播放元素。聚焦核心说明与引导。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 说明区：使用场景与页面角色 -->
+    <section>
+      <h2>页面说明</h2>
+      <p>本页作为 <strong>mk体育</strong> 的落地介绍页，主要承担以下角色：</p>
+      <p style="padding-left: 0.2rem;">
+        ▸ 固定地址索引 —— 用户可收藏此页作为长期访问参考，<a href="https://mksupport.com.cn" style="color:#3060e0; text-decoration: none; font-weight:450;">mk体育</a> 的入口信息会在此保持同步更新。<br>
+        ▸ 功能速览 —— 概括服务覆盖方向，帮助新用户快速理解用途。<br>
+        ▸ 常见问题摘要 —— 聚合高频疑问，降低重复沟通成本。
+      </p>
+      <p>整体内容侧重于可用性说明与路径指引，不包含夸大承诺或非必要推广信息。</p>
+    </section>
+
+    <!-- 附加特点：环境适配 -->
+    <section>
+      <h2>场景适配摘要</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.8rem 2rem; margin-bottom: 0.6rem;">
+        <div style="min-width: 130px;">
+          <h3 style="margin-bottom: 0.2rem;">设备端</h3>
+          <p style="font-size:0.95rem;">桌面与移动端响应式布局，正文宽度自适应，阅读体验统一。</p>
+        </div>
+        <div style="min-width: 130px;">
+          <h3 style="margin-bottom: 0.2rem;">网络环境</h3>
+          <p style="font-size:0.95rem;">页面资源轻量，内容静态呈现，加载依赖少，弱网环境亦可正常打开。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+      <h2>常见问题 <span class="tag">摘要</span></h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Q：如何获取 mk体育 的最新入口？</div>
+        <div class="faq-a">推荐直接使用本页顶部或正文中的链接：<a href="https://mksupport.com.cn">mk体育</a>。该地址为固定索引，如有调整会在此页说明。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q：页面内容是否经常变化？</div>
+        <div class="faq-a">本页以稳定说明为主，仅在入口信息或功能方向有实质更新时调整。适合长期保存为书签。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q：是否支持第三方聚合或跳转？</div>
+        <div class="faq-a">本页仅提供直接说明与链接，不嵌入外部脚本或广告。用户通过 <a href="https://mksupport.com.cn" style="color:#3060e0; text-decoration: none;">mk体育</a> 可获取完整服务。</div>
+      </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <div class="bottom-note">
+      <p>
+        <span style="font-weight: 480;">服务索引 ·</span>
+        <a href="https://mksupport.com.cn">mk体育</a>
+        <span style="color:#6e7587;">  —— 稳定入口说明页。</span>
+        本页面不存储用户数据，不收集隐私信息。
+      </p>
+      <p style="font-size:0.85rem; color:#6e7587; margin-top:0.3rem;">
+        © 页面内容仅用于功能展示 · 具体服务以实际页面为准
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
