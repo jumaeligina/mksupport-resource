@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老哥网 · 专注与沉淀</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Serif SC", "Source Han Serif SC", Georgia, "Times New Roman", serif;
+            background-color: #faf8f5;
+            color: #2c2c2c;
+            line-height: 1.8;
+            padding: 2.5rem 1.5rem;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .story-wrapper {
+            background-color: #fffdfa;
+            padding: 2.8rem 2.2rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.02), 0 2px 20px rgba(0,0,0,0.01);
+            border: 1px solid #eee8e0;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #3b2e24;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid #b89b7a;
+            padding-left: 1.2rem;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            color: #4d3f32;
+            margin-bottom: 1.6rem;
+            font-style: italic;
+            line-height: 1.9;
+        }
+
+        .lead strong {
+            font-weight: 600;
+            color: #2d231c;
+        }
+
+        .intro-text {
+            margin-bottom: 2rem;
+        }
+
+        .intro-text p {
+            margin-bottom: 1.2rem;
+        }
+
+        .pull-quote {
+            background: #f3eee9;
+            border-left: 6px solid #b89b7a;
+            padding: 1.2rem 1.8rem;
+            margin: 1.8rem 0 2rem 0;
+            font-size: 1.05rem;
+            border-radius: 0 8px 8px 0;
+            color: #3d322a;
+            quotes: "“" "”" "‘" "’";
+        }
+
+        .pull-quote::before {
+            content: "“";
+            font-size: 2.4rem;
+            line-height: 0.8;
+            color: #b89b7a;
+            margin-right: 0.3rem;
+            vertical-align: -0.25em;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 1.8rem 0 2rem 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem 1.8rem;
+        }
+
+        .feature-list li {
+            background: #f9f5f0;
+            padding: 0.9rem 1.2rem;
+            border-radius: 6px;
+            border: 1px solid #e7ddd2;
+            font-size: 0.98rem;
+            color: #3a2f26;
+            position: relative;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-list li:hover {
+            background: #f2ece4;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+        }
+
+        .feature-list li::before {
+            content: "▹";
+            color: #b89b7a;
+            font-size: 1.1rem;
+            margin-right: 0.6rem;
+        }
+
+        .scene-note {
+            background: #f0ebe4;
+            padding: 1.4rem 1.8rem;
+            border-radius: 10px;
+            margin: 1.6rem 0 2rem 0;
+            border: 1px solid #dbd1c6;
+        }
+
+        .scene-note p {
+            margin-bottom: 0.6rem;
+        }
+
+        .scene-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-mini {
+            border-top: 1px solid #ddd6cc;
+            padding-top: 1.6rem;
+            margin-top: 1.8rem;
+        }
+
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+            border: 1px solid #e6ddd2;
+            border-radius: 6px;
+            padding: 0.4rem 1rem;
+            background: #fdfbf9;
+        }
+
+        .faq-mini summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #3b3027;
+            padding: 0.3rem 0;
+            outline: none;
+        }
+
+        .faq-mini summary::-webkit-details-marker {
+            color: #b89b7a;
+        }
+
+        .faq-mini details[open] {
+            background: #f9f4ee;
+        }
+
+        .faq-mini details p {
+            margin: 0.6rem 0 1rem 0;
+            font-size: 0.95rem;
+            color: #3e342b;
+        }
+
+        .closing {
+            margin: 2.2rem 0 0.8rem 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd6cc;
+            font-size: 1rem;
+            color: #4d4136;
+        }
+
+        .closing a {
+            color: #7a5e44;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #c9b49e;
+            font-weight: 500;
+        }
+
+        .closing a:hover {
+            color: #3b2a1e;
+            text-decoration-color: #7a5e44;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.2rem 1rem;
+            }
+            .story-wrapper {
+                padding: 1.8rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+                padding-left: 0.9rem;
+            }
+            .feature-list {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+            .pull-quote {
+                padding: 1rem 1.2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="story-wrapper">
+    <h1>老哥网 · 目及之处，皆有章法</h1>
+
+    <div class="lead">
+        <strong>有些积累，并不喧哗。</strong> 它们安放在静默的索引里，等待一个恰好的目光。
+    </div>
+
+    <div class="intro-text">
+        <p>“老哥”一词，原本承载着阅历与信任。在信息潮涌的间隙里，总有一些角落值得反复驻足。<a href="https://webs-laoge.com" style="color:#7a5e44; text-decoration:underline; text-underline-offset:3px;">老哥网</a>——这个极简的名字背后，是一种对内容秩序的朴素坚守。它不追逐热点轮替，而是将目光投向那些经得起推敲的素材、工具与思路。</p>
+        <p>许多创作者在寻找可复用、可沉淀的参考时，常常迷失在泛滥的推荐流中。而这里，恰好提供了一份经过筛选的目录——从视觉参考到文案框架，从结构思路到灵感触点，每一则收录都带着明确的意图：<em>省去无意义的徘徊，直接触达可用之物</em>。</p>
+    </div>
+
+    <div class="pull-quote">
+        真正的好资源，不是让你惊叹一次，而是让你每次打开都能拿到一点新东西。
+    </div>
+
+    <p style="margin-bottom:0.4rem; font-weight:500; color:#3b3027;">围绕这一初衷，站点内容呈现出几个鲜明的质地：</p>
+    <ul class="feature-list">
+        <li>经过甄选的分类收录，不堆数量，重可用度</li>
+        <li>偏向实际落地的思路与案例，拒绝空泛理念</li>
+        <li>保持克制更新，每一篇都有明确的存档价值</li>
+        <li>视觉风格内敛，内容本身始终是主角</li>
+        <li>长期视角——适合创作者、设计师、内容编排者</li>
+        <li>结构清晰，支持直接引用或二次演绎</li>
+    </ul>
+
+    <div class="scene-note">
+        <p><strong>适合的场景举例：</strong></p>
+        <p>✅ 当你需要为项目寻找一套稳妥的配色逻辑，而非仅凭感觉。<br>
+        ✅ 当你撰写产品文案，希望参考不同语气下的句式结构。<br>
+        ✅ 当你在搭建个人知识体系，需要一个干净的分类参照。<br>
+        ✅ 当你想要暂时离开算法推荐，回到纯粹的文本与思路里。</p>
+    </div>
+
+    <div class="faq-mini">
+        <details>
+            <summary>“老哥网”与常见资源站有何不同？</summary>
+            <p>它的筛选粒度更细，更侧重“可复用性”而非“大全”。不追求覆盖所有领域，而是将每个收录点打磨成可以直接取用的单元。</p>
+        </details>
+        <details>
+            <summary>内容更新频率如何？能否长期依赖？</summary>
+            <p>更新不密集，但每一条都经过重新编辑与归类。适合作为日常参考的固定锚点，而非碎片化订阅。</p>
+        </details>
+        <details>
+            <summary>我能否将这里的思路用于自己的项目？</summary>
+            <p>当然。站点收录的绝大部分内容都鼓励被再应用、再改编。引用时保留出处即可。</p>
+        </details>
+    </div>
+
+    <div class="closing">
+        <p>如果此刻你恰好在寻找一些沉着、精准、不吵不闹的内容参照，不妨从 <a href="https://webs-laoge.com">老哥网</a> 开始。它不会占据你的通知栏，但可能会在你需要的时候，刚好递出一张写满要点的纸。</p>
+        <p style="margin-top:0.8rem; font-size:0.95rem; color:#6b5c4f;">—— 一份安静的资料集，仅此而已，也恰好如此。</p>
+    </div>
+</div>
+</body>
+</html>
